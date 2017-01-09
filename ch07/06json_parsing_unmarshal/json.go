@@ -1,3 +1,4 @@
+// リスト7.10
 package main
 
 import (

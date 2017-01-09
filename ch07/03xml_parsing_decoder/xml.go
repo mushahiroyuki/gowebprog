@@ -1,3 +1,4 @@
+// リスト7.6
 package main
 
 import (

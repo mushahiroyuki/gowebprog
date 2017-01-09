@@ -1,3 +1,4 @@
+// リスト7.12
 package main
 
 import (
@@ -25,27 +26,26 @@ type Comment struct {
 }
 
 func main() {
-
-	post := Post{
-		Id:      1,
-		Content: "Hello World!",
-		Author: Author{
-			Id:   2,
-			Name: "Sau Sheong",
-		},
-		Comments: []Comment{
-			Comment{
-				Id:      1,
-				Content: "Have a great day!",
-				Author:  "Adam",
-			},
-			Comment{
-				Id:      2,
-				Content: "How are you today?",
-				Author:  "Betty",
-			},
-		},
-	}
+  post := Post{
+    Id:      1,
+    Content: "Hello World!",
+    Author: Author{
+      Id:   2,
+      Name: "Sau Sheong",
+    },
+    Comments: []Comment{
+      Comment{
+        Id:      3,
+        Content: "Have a great day!",
+        Author:  "Adam",
+      },
+      Comment{
+        Id:      4,
+        Content: "How are you today?",
+        Author:  "Betty",
+      },
+    },
+  }
 
 	output, err := json.MarshalIndent(&post, "", "\t\t")
 	if err != nil {
