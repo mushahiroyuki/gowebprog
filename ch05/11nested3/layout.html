@@ -1,0 +1,15 @@
+{{ define "layout" }}
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Go Web Programming</title>
+  </head>
+  <body>
+    {{ block "content" . }}
+      <h1 style="color: blue;">Hello World!</h1>
+    {{ end }}    
+  </body>
+</html>
+
+{{ end }}
