@@ -1,3 +1,14 @@
+// リスト7.15
+/*
+
+＜まずPostgreSQLを起動＞
+$ psql -f install.sql 
+$ psql -f setup.sql
+$ go build
+$ ./10web_service &
+$ ./script_create
+$ psql -U gwp -d gwp -c "select * from posts;"
+*/
 package main
 
 import (
