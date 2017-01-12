@@ -1,2 +1,3 @@
 # gowebprog
-Go Web Programming examples
+Go Web Programming の例題です。
+
