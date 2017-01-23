@@ -1,13 +1,13 @@
 # ChitChat
 
-This is the simple forum application written with Go for the book "Go Web Programming" from Manning Publication Co. The source code for this application is the basis for the Chapter 2 - Go ChitChat. 
+このサンプルは第2章で紹介した、単純なフォーラムを実現するアプリケーションです。
 
-However the code is a reference and is not a 1 - 1 match with the code in the book. There are portions of the code that is more detailed in here than in Chapter 2 (which is a simplified version of the source code here).
+このコードは第2章の説明と、1対1には対応していません。第2章の例よりも細かな処理を行っている部分があります。
 
-Some differences include:
+以下に相違点をあげます。
 
-* This version of ChitChat is configurable with a `config.json` file
-* This version is able to log to a `chitchat.log` file
-* There are test files in this code
-* All structs are fully fleshed out (in the book chapter, they are only implied)
-* Some of the functions are placed as methods for the struct types instead of being a part of the package
+* config.json で設定を変更することができます
+* chitchat.log ファイルにログが書き出されます
+* テストファイルがあります
+* 構造体がすべて細かく定義されています（本文中では明確には記述されていませんでした）
+* 一部の関数は（パッケージの一部ではなく）構造体のメソッドになっています
