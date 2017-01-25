@@ -17,7 +17,7 @@ func printLetters2(wg *sync.WaitGroup) {
 		time.Sleep(1 * time.Microsecond)
 		fmt.Printf("%c ", i)
 	}
-//	wg.Done()
+//	wg.Done()  // 減算を忘れた！
 }
 
 func main() {

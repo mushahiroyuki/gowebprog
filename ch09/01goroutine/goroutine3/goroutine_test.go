@@ -13,7 +13,6 @@ func TestGoPrint1(t *testing.T) {
 }
 
 func TestGoPrint2(t *testing.T) {
-    goPrint2()
-    time.Sleep(1 * time.Millisecond)
+	goPrint2()
+	time.Sleep(1 * time.Millisecond)
 }
-
