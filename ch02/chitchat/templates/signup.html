@@ -1,0 +1,16 @@
+{{ define "content" }}
+
+<form class="form-signin" role="form" action="/signup_account" method="post">
+  <h2 class="form-signin-heading">
+    <i class="fa fa-comments-o">
+      ChitChat
+    </i>
+  </h2>
+  <div class="lead">登録</div>
+  <input id="name" type="text" name="name" class="form-control" placeholder="お名前" required autofocus>
+  <input type="email" name="email" class="form-control" placeholder="Email" required>
+  <input type="password" name="password" class="form-control" placeholder="パスワード" required>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">登録</button>
+</form>
+
+{{ end }}
