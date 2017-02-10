@@ -5,9 +5,12 @@ Go Web Programming の例題です。
 
 
 [インプレス](http://book.impress.co.jp/booklist/)発行の『[Goプログラミング実践入門](http://www.marlin-arms.com/support/goweb/)』の例題用リポジトリです。
+
+現在準備中ですが、ダウンロードしてお試しいただけます。
+
 次のいずれかの方法でダウンロードしてください。
 
-  ターミナルで \$GOPATH/src</tt> など適当なディレクトリ（フォルダ）に移動してから、下記のコマンドを実行してください（gitが必要です）。
+  ターミナルで $GOPATH/src</tt> など適当なディレクトリ（フォルダ）に移動してから、下記のコマンドを実行してください（gitが必要です）。
 
      git clone https://github.com/mushahiroyuki/gowebprog.git
 
