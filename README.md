@@ -27,7 +27,5 @@ Go Web Programming の例題です。
 |ch02       |2章の例題    |
 |ch03       |3章の例題    |
 |...        |...         |
-|example/ch21       |21章の例題   |
-|example/chac       |付録Cの例題   |
-|example/chad       |付録Dの例題   |
+|ch10       |10章の例題    |
 
