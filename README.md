@@ -1,4 +1,4 @@
-# Goプログラミング実践入門 例題
+# 『Goプログラミング実践入門』 例題
 
 ![表紙](http://www.marlin-arms.com/jpn/arts/books-small/goweb.png)
 
