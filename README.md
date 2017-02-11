@@ -1,5 +1,4 @@
-# gowebprog
-『Goプログラミング実践入門 標準ライブラリでゼロからWebアプリを作る』の例題です。
+# Goプログラミング実践入門 例題
 
 ![表紙](http://www.marlin-arms.com/jpn/arts/books-small/goweb.png)
 
