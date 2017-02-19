@@ -21,7 +21,7 @@ func showMessage(w http.ResponseWriter, r *http.Request) {
 	c, err := r.Cookie("flash")
 	if err != nil {
 		if err == http.ErrNoCookie {
-			fmt.Fprintln(w, "No message found")
+			fmt.Fprintln(w, "メッセージがありません。")
 		}
 	} else {
 		rc := http.Cookie{

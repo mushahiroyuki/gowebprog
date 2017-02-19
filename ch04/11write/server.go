@@ -1,4 +1,4 @@
-// リスト4.
+// リスト4.11
 package main
 
 import (
