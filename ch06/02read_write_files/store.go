@@ -10,7 +10,7 @@ import (
 func main() {
 	data := []byte("Hello World!\n")
 
-	// write to file and read from file using WriteFile and ReadFile
+	// ファイルへの書き込みとファイルからの読み込み。WriteFileとReadFileを利用
 	err := ioutil.WriteFile("data1", data, 0644)
 	if err != nil {
 		panic(err)
@@ -18,7 +18,7 @@ func main() {
 	read1, _ := ioutil.ReadFile("data1")
 	fmt.Print(string(read1))
 
-	// write to file and read from file using the File struct
+	// File構造体を利用したファイルの読み書き
 	file1, _ := os.Create("data2")
 	defer file1.Close()
 
