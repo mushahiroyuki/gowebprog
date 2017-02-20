@@ -49,7 +49,7 @@ func main() {
   fmt.Println(post) // {1 Hello World! Sau Sheong [] 2015-04-13 11:38:50.91815604 +0800 SGT}
   
   // Add a comment
-	comment := Comment{Content: "Good post!", Author: "Joe"}
+	comment := Comment{Content: "いい投稿だね！", Author: "Joe"}
 	Db.Model(&post).Association("Comments").Append(comment)
 
   // Get comments from a post

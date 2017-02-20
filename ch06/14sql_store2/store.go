@@ -88,7 +88,7 @@ func main() {
 	comment.Create()
 	readPost, _ := GetPost(post.Id)
 
-	fmt.Println(readPost)                  // {2 Hello World! Sau Sheong [{2 いい投稿だね！ Joe 0xc420016800}]}
-	fmt.Println(readPost.Comments)         // [{2 いい投稿だね！ Joe 0xc420016800}]
-	fmt.Println(readPost.Comments[0].Post) // &{2 Hello World! Sau Sheong [{2 いい投稿だね！ Joe 0xc420016800}]}
+	fmt.Println(readPost)    // {1 Hello World! Sau Sheong [{1 いい投稿だね！ Joe 0xc420018800}]}
+	fmt.Println(readPost.Comments)         // [{1 いい投稿だね！ Joe 0xc420018800}]
+	fmt.Println(readPost.Comments[0].Post) // &{1 Hello World! Sau Sheong [{1 いい投稿だね！ Joe 0xc420018800}]}
 }
