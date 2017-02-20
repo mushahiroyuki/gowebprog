@@ -1,4 +1,8 @@
 // リスト6.17
+/*
+  1. go get "github.com/jmoiron/sqlx"
+	2. go run store.go
+*/
 package main
 
 import (

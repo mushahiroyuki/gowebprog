@@ -1,5 +1,8 @@
 // リスト6.18
-// $ go get github.com/jinzhu/gorm
+/* 
+ 1. go get github.com/jinzhu/gorm
+ 2. go run store.go
+*/
 package main
 
 import (

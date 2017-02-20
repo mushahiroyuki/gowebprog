@@ -1,4 +1,11 @@
 // リスト6.14
+/*
+ 1. Postgresを起動
+ 2. psql -U gwp -f setup.sql -d gwp
+   （一番最初は ERRORが表示されるが、そのままでOK)
+ 3. go run store.go
+*/
+
 package main
 
 import (
@@ -81,7 +88,7 @@ func main() {
 	comment.Create()
 	readPost, _ := GetPost(post.Id)
 
-	fmt.Println(readPost)                  // {1 Hello World! Sau Sheong [{1 Good post! Joe 0xc20802a1c0}]}
-	fmt.Println(readPost.Comments)         // [{1 Good post! Joe 0xc20802a1c0}]
-	fmt.Println(readPost.Comments[0].Post) // &{1 Hello World! Sau Sheong [{1 Good post! Joe 0xc20802a1c0}]}
+	fmt.Println(readPost)                  // {2 Hello World! Sau Sheong [{2 いい投稿だね！ Joe 0xc420016800}]}
+	fmt.Println(readPost.Comments)         // [{2 いい投稿だね！ Joe 0xc420016800}]
+	fmt.Println(readPost.Comments[0].Post) // &{2 Hello World! Sau Sheong [{2 いい投稿だね！ Joe 0xc420016800}]}
 }

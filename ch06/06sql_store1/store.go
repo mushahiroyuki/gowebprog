@@ -1,4 +1,15 @@
 // リスト6.6
+/*
+ 1. Postgresを起動
+ 2. createuser -P -d gwp
+    （passwd gwp）
+ 3. creatdb gwp
+ 4. psql -U gwp -f setup.sql -d gwp
+   （一番最初は ERRORが表示されるが、そのままでOK)
+ 5. go get "github.com/lib/pq"
+ 6. go run store.go
+*/
+
 package main
 
 import (

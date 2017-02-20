@@ -15,8 +15,8 @@
 * あるいは、ページ右上の［Clone or download］をクリック（タップ）して表示される［Download ZIP］でダウンロードしてください。
 
 
-本について詳しくは[サポートページ](http://www.marlin-arms.com/support/goweb/)をご覧ください。
-
+* 本について詳しくは[サポートページ](http://www.marlin-arms.com/support/goweb/)をご覧ください。
+* そのまま実行しても動かない場合は、多くの場合、ソースファイル（xxx.go）に実行方法が書いてありますのでご覧ください。
 
 ## ファイル構成
 
