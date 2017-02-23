@@ -1,3 +1,4 @@
+# 第9章
 
 <pre>
 01goroutine  
@@ -18,15 +19,14 @@
   channel_select1 リスト9.9
   channel_select2 defaultブロック
   channel_select3 リスト9.10
-06channel_shared
-  ??
-11mosaic_original リスト9.11〜9.17
+mosaic_original リスト9.11〜9.17
     1. go build
-    2. ./07mosaic_original
+    2. ./mosaic_original
     3. http://127.0.0.1:8080  をオープンしファイルを指定
-18mosaic_concurrent リスト9.18〜9.1
+mosaic_concurrent リスト9.18〜9.1
     1. go build
-    2. ./08mosaic_concurrent 
+    2. ./mosaic_concurrent 
     3. 「Mosaic server started.」を待ってhttp://127.0.0.1:8080  をオープンしファイルを指定  （大きなファイルを指定するとエラーになります。1024x768ぐらいならば大丈夫ですが、この倍だとエラーになります）
-</pre>
 
+
+</pre>

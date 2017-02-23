@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "../08test_ginkgo"
+	. "../25test_ginkgo"
 //	. "gwp/Chapter_8_Testing_Web_Applications/test_ginkgo"
 	"net/http"
 	"net/http/httptest"
