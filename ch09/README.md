@@ -12,7 +12,7 @@
   waitgroup1 リスト9.6
   waitgroup2 カウンタを減算し忘れた場合
 07channel_wait リスト9.7
-84channel_message
+08channel_message
   channel_message1 リスト9.8
   channel_message2 バッファ付きチャネル
 09channel_select
