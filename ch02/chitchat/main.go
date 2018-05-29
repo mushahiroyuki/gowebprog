@@ -8,9 +8,11 @@ import (
 func main() {
 	p("ChitChat", version(), "started at", config.Address)
 
-	// handle static assets
+	// デフォルトマルチプレクサを生成する
 	mux := http.NewServeMux()
+	// publicディレクトリを起点とする
 	files := http.FileServer(http.Dir(config.Static))
+	// 静的ファイルの返送 StripPrexはプレフィックスを削除する関数
 	mux.Handle("/static/", http.StripPrefix("/static/", files))
 
 	//
@@ -18,7 +20,7 @@ func main() {
 	// route handler functions defined in other files
 	//
 
-	// index
+	// index ルートURLをハンドラ関数にリダイレクトする
 	mux.HandleFunc("/", index)
 	// error
 	mux.HandleFunc("/err", err)
