@@ -19,6 +19,7 @@ func err(writer http.ResponseWriter, request *http.Request) {
 }
 
 func index(writer http.ResponseWriter, request *http.Request) {
+	// データの取得
 	threads, err := data.Threads()
 	if err != nil {
 		error_message(writer, request, "Cannot get threads")
