@@ -22,7 +22,7 @@ func writeExample(w http.ResponseWriter, r *http.Request) {
 
 func writeHeaderExample(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(501)
-	fmt.Fprintln(w, "そのようなサービスはありません。ほかを当たってください")
+	fmt.Fprintln(w, "そのようなサービスはありません。ほかを当たってください(^ ^)")
 }
 
 func headerExample(w http.ResponseWriter, r *http.Request) {

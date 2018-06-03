@@ -13,10 +13,11 @@ func (h HelloHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func log(h http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	f := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		fmt.Printf("ハンドラが呼び出されました - %T\n", h)
 		h.ServeHTTP(w, r)
 	})
+	return f
 }
 
 func protect(h http.Handler) http.Handler {
@@ -32,5 +33,6 @@ func main() {
 	}
 	hello := HelloHandler{}
 	http.Handle("/hello", protect(log(hello)))
+
 	server.ListenAndServe()
 }
