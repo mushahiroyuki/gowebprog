@@ -7,14 +7,14 @@ import (
 )
 
 func process(w http.ResponseWriter, r *http.Request) {  
-//   w.Header().Set("X-XSS-Protection", "0") // 有効にするFirefox以外でも攻撃が可能になる
-  t, _ := template.ParseFiles("tmpl.html")  
+  w.Header().Set("X-XSS-Protection", "0") // 有効にするFirefox以外でも攻撃が可能になる
+  t, _ := template.ParseFiles("ch05/20xss/tmpl.html")
 	//  t.Execute(w, r.FormValue("comment"))
 	t.Execute(w, template.HTML(r.FormValue("comment"))) // ← 
 }
 
 func form(w http.ResponseWriter, r *http.Request) {  
-  t, _ := template.ParseFiles("form.html")  
+  t, _ := template.ParseFiles("ch05/20xss/form.html")
   t.Execute(w, nil)  
 }
 
