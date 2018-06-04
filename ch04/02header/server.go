@@ -14,6 +14,7 @@ import (
 func headers(w http.ResponseWriter, r *http.Request) {
 	h := r.Header
 	fmt.Fprintln(w, h)
+	fmt.Fprintln(w, h.Get("Accept-Encoding"))
 }
 
 func main() {

@@ -27,5 +27,7 @@ import (
 )
 
 func main() {
+	// ネットワークアドレスが空の場合、ポート80が使われる
+	// ハンドラがnilの場合、デフォルトのマルチプレクサであるDefaultServeMuxが使われる
 	http.ListenAndServe("", nil)
 }

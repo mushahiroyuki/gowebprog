@@ -2,7 +2,7 @@ package main
 
 import (
 //	"github.com/sausheong/gwp/Chapter_2_Go_ChitChat/chitchat/data"
-	"github.com/mushahiroyuki/gowebprog/ch02/chitchat/data"
+	"github.com/tseno/gowebprog/ch02/chitchat/data"
 	"net/http"
 )
 
@@ -40,16 +40,22 @@ func signupAccount(writer http.ResponseWriter, request *http.Request) {
 // POST /authenticate
 // Authenticate the user given the email and password
 func authenticate(writer http.ResponseWriter, request *http.Request) {
+	// フォームの内容をパースする。
 	err := request.ParseForm()
+	// 構造体Userを作成して、入力されたemailをキーにDBからデータを入れる。
 	user, err := data.UserByEmail(request.PostFormValue("email"))
 	if err != nil {
 		danger(err, "Cannot find user")
 	}
+	// ハッシュ化されたpasswordと比較する
 	if user.Password == data.Encrypt(request.PostFormValue("password")) {
+		// DBのsessionテーブルにinsertする
 		session, err := user.CreateSession()
 		if err != nil {
 			danger(err, "Cannot create session")
 		}
+		// セッションクッキーの作成。有効期限は設定しないことで、ブラウザが終了する際に自動的に消去される。
+		// HttpOnlyで、HTTP,HTTPSに限定される。Javascript等のからはアクセスできない。
 		cookie := http.Cookie{
 			Name:     "_cookie",
 			Value:    session.Uuid,

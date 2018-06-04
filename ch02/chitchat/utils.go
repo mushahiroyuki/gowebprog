@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 	// 	"github.com/sausheong/gwp/Chapter_2_Go_ChitChat/chitchat/data"
-	"github.com/mushahiroyuki/gowebprog/ch02/chitchat/data"
+	"github.com/tseno/gowebprog/ch02/chitchat/data"
 	"html/template"
 	"log"
 	"net/http"
@@ -56,10 +56,12 @@ func error_message(writer http.ResponseWriter, request *http.Request, msg string
 	http.Redirect(writer, request, strings.Join(url, ""), 302)
 }
 
+// クッキーを取り出して、ログインしているかチェックする。
 // Checks if the user is logged in and has a session, if not err is not nil
 func session(writer http.ResponseWriter, request *http.Request) (sess data.Session, err error) {
 	cookie, err := request.Cookie("_cookie")
 	if err == nil {
+		// データベースを検索して、セッションのユニークIDが存在するかチェックする
 		sess = data.Session{Uuid: cookie.Value}
 		if ok, _ := sess.Check(); !ok {
 			err = errors.New("Invalid session")

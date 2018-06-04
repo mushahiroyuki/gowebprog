@@ -7,7 +7,7 @@ import (
 )
 
 func process(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("tmpl.html")
+	t, _ := template.ParseFiles("ch05/17context_aware/tmpl.html")
 	content := `I asked: <i>"What's up?"</i>`
 	t.Execute(w, content)
 }

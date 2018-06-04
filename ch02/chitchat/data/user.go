@@ -151,6 +151,7 @@ func Users() (users []User, err error) {
 	return
 }
 
+// 構造体Userにuserテーブルの内容を入れる。
 // Get a single user given the email
 func UserByEmail(email string) (user User, err error) {
 	user = User{}

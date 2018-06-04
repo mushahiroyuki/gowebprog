@@ -10,7 +10,7 @@
     <div> ここは、t1.html（インクルードの前）</div>
     <div>t1.html内でのドットの値 - [{{ . }}]</div>
     <hr/>
-    {{ template "t2.html" }}
+    {{ template "t2.html" . }}
     <hr/>
     <div> ここは、t1.html（インクルードの後）</div>
 <!--
