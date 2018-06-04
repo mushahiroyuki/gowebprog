@@ -12,9 +12,9 @@ func process(w http.ResponseWriter, r *http.Request) {
 	rand.Seed(time.Now().Unix())
 	var t *template.Template
 	if rand.Intn(10) > 5 {
-		t, _ = template.ParseFiles("layout.html", "red_hello.html")
+		t, _ = template.ParseFiles("ch05/28nested2/layout.html", "ch05/28nested2/red_hello.html")
 	} else {
-		t, _ = template.ParseFiles("layout.html", "blue_hello.html")
+		t, _ = template.ParseFiles("ch05/28nested2/layout.html", "ch05/28nested2/blue_hello.html")
 	}
 	t.ExecuteTemplate(w, "layout", "")
 }
