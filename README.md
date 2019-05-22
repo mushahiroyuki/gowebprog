@@ -14,7 +14,7 @@
 * あるいは、ページ右上の［Clone or download］をクリック（タップ）して表示される［Download ZIP］でダウンロードしてください。
 
 
-本について詳しくは[サポートページ](http://www.marlin-arms.com/support/goweb/)をご覧ください。
+本について詳しくは[サポートページ](https://www.marlin-arms.com/support/goweb/)をご覧ください。
 
 * ディレクトリの頭に付いている番号が、リストの番号と対応しています。たとえば ch05/02trigger_template は第5章の「リスト5.2」に対応するものです。
 * ディレクリのREADMEファイル（README.md）やソースファイル（xxx.go）に説明が書いてある場合があります。とくに単純に実行しても動かない場合は参照してください。
