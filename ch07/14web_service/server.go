@@ -5,7 +5,7 @@
 $ psql -f install.sql 
 $ psql -f setup.sql
 $ go build
-$ ./10web_service &
+$ ./14web_service &
 $ ./script_create
 $ psql -U gwp -d gwp -c "select * from posts;"
 */
