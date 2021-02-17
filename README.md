@@ -11,7 +11,7 @@
 
  git clone https://github.com/mushahiroyuki/gowebprog.git
 
-* あるいは、ページ右上の［Clone or download］をクリック（タップ）して表示される［Download ZIP］でダウンロードしてください。
+* あるいは、ページ右上の［Code］をクリック（タップ）して表示される［Download ZIP］でダウンロードしてください。
 
 
 本について詳しくは[サポートページ](https://www.marlin-arms.com/support/goweb/)をご覧ください。
