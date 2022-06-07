@@ -17,5 +17,14 @@
 1. ＜Postgresを起動＞
 2. createdb chitchat
 3. psql -f data/setup.sql -d chitchat
-4. go build
-5. ./chitchat
+4. go mod tidy
+5. go build
+6. ./chitchat
+
+●go.modファイルがない場合は、4.の前に次を実行してください。
+
+ $ go mod init github.com/mushahiroyuki/gowebprog/ch02/chitchat
+
+●go.modの先頭行が次のようになっていない場合は、一度 go.modを削除して上のコマンドを実行してください。
+
+module github.com/mushahiroyuki/gowebprog/ch02/chitchat
