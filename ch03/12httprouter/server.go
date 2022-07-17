@@ -1,11 +1,14 @@
 // リスト3.12
-
+//
+// 次を実行してください
+// $ go mod init 12httprouter
+// $ go mod tidy
 
 package main
 
 import (
 	"fmt"
-	"github.com/julienschmidt/httprouter" // go get github.com/julienschmidt/httprouter
+	"github.com/julienschmidt/httprouter"
 	"net/http"
 )
 
